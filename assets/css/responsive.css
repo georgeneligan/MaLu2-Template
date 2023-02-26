@@ -1,0 +1,38 @@
+@media screen and (max-width: 1280px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .navigation ul li {
+    font-size: 15px;
+  }
+  .fa-brands {
+    font-size: 18px;
+  }
+  .navigation ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .burger_menu {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .grid_fr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
