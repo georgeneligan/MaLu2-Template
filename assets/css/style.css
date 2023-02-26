@@ -61,7 +61,7 @@ ul li:hover {
 }
 
 .banner {
-  background-image: url(/assets/img/bannerprimary.jpg);
+  background-image: url(../img/bannerprimary.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
