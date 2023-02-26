@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: rgb(201, 200, 200);
 }
 
 .logo {
@@ -71,12 +70,7 @@ ul li:hover {
 .overley {
   width: 100%;
   height: 100vh;
-  background-color: rgba(4, 4, 4, 0.24);
-}
-
-.content {
-  width: 100%;
-  height: 1000px;
+  background-color: rgba(4, 4, 4, 0.408);
 }
 
 .fa-brands {
@@ -115,18 +109,33 @@ ul li:hover {
   margin: 0px;
   padding: 0px;
 }
+.content .content_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content .content_top .works_title {
+  width: 80%;
+  text-align: center;
+  margin-top: 50px;
+  border-bottom: 1px solid rgba(83, 83, 83, 0.442);
+}
+.content .content_top .works_title h2 {
+  font-size: 20px;
+}
 
-.content {
+.content .content_middle {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   gap: 20px;
-  box-shadow: 2px 2px 10px black;
+
   width: 100%;
   background-color: white;
   margin: 0 auto;
   height: fit-content;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .content div {
@@ -153,8 +162,136 @@ ul li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
+
+.fa-solid {
+  font-size: 35px;
+  color: #b48047;
+  z-index: 200;
+}
+.fa-x {
+  color: rgb(0, 0, 0);
+}
+.nav_burger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: #b47f47f5;
+  z-index: 50;
+}
+.nav_burger ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 15px;
+}
+.nav_burger ul li {
+  list-style: none;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 10px;
 }
 
 .hidden {
   display: none;
+}
+
+.slideshow-container {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 90%;
+}
+
+/* Slides */
+.mySlides {
+  text-align: center;
+}
+
+.mySlides h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 32vh;
+  padding-bottom: 10px;
+}
+
+.mySlides p {
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.4s;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #b48047;
+  color: white;
+  border-radius: 14px;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #b48047;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
 }
